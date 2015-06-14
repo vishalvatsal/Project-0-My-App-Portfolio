@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--Buton Style -->
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="AppButton.Red" parent="AppButton">
+        <item name="android:background">@color/accent</item>
+    </style>
+
+    <style name="AppButton.FixedWidth" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="AppButton.FixedWidth.Red" parent="AppButton.FixedWidth">
+        <item name="android:background">@color/accent</item>
+    </style>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#ff4081</color>
+    <color name="text_primary">#D9FFFFFF</color>
+    <color name="text_secondary">#D9000000</color>
+    <color name="window_Background">#D9000000</color>
+    <color name="navigation_Bar">#D9000000</color>
+
+</resources>

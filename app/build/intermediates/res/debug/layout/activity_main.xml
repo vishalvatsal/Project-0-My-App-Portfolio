@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/app_nameTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/sportify_app"
+            style="@style/AppButton"
+            android:layout_alignEnd="@+id/capstone_app"
+            android:layout_alignLeft="@+id/capstone_app"
+            android:layout_alignRight="@+id/capstone_app"
+            android:layout_alignStart="@+id/capstone_app"
+            android:text="@string/button_sportifyapp"
+            android:clickable="true"
+            android:onClick="onClickSportifyStreamer" />
+
+        <Button
+            android:id="@+id/score_app"
+            style="@style/AppButton"
+            android:layout_alignEnd="@+id/capstone_app"
+            android:layout_alignLeft="@+id/capstone_app"
+            android:layout_alignRight="@+id/capstone_app"
+            android:layout_alignStart="@+id/capstone_app"
+            android:layout_below="@+id/sportify_app"
+            android:text="@string/button_scoreapp"
+            android:clickable="true"
+            android:onClick="onClickScoresApp" />
+
+        <Button
+            android:id="@+id/library_app"
+            style="@style/AppButton"
+            android:layout_alignEnd="@+id/capstone_app"
+            android:layout_alignLeft="@+id/capstone_app"
+            android:layout_alignRight="@+id/capstone_app"
+            android:layout_alignStart="@+id/capstone_app"
+            android:layout_below="@+id/score_app"
+            android:text="@string/button_libraryapp"
+            android:clickable="true"
+            android:onClick="onClickLibraryApp" />
+
+        <Button
+            android:id="@+id/builditbigger_app"
+            style="@style/AppButton"
+            android:layout_alignEnd="@+id/capstone_app"
+            android:layout_alignLeft="@+id/capstone_app"
+            android:layout_alignRight="@+id/capstone_app"
+            android:layout_alignStart="@+id/capstone_app"
+            android:layout_below="@+id/library_app"
+            android:text="@string/button_builditbigger"
+            android:clickable="true"
+            android:onClick="onClickBuildItBigger" />
+
+        <Button
+            android:id="@+id/xyzreader_app"
+            style="@style/AppButton"
+            android:layout_alignEnd="@+id/capstone_app"
+            android:layout_alignLeft="@+id/capstone_app"
+            android:layout_alignRight="@+id/capstone_app"
+            android:layout_alignStart="@+id/capstone_app"
+            android:layout_below="@id/builditbigger_app"
+            android:text="@string/button_xyzreader"
+            android:clickable="true"
+            android:onClick="onClickXYZReader" />
+
+        <Button
+            android:id="@+id/capstone_app"
+            style="@style/AppButton.Red"
+            android:layout_below="@+id/xyzreader_app"
+            android:text="@string/button_capstone"
+            android:clickable="true"
+            android:onClick="onClickCapstone" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+<!-- From: file:/I:/Nanodegree/Android/PortfolioAPP/app/src/main/res/layout/activity_main.xml -->

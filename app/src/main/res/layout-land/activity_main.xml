@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="@string/app_nameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            style="@style/AppButton.FixedWidth"
+            android:id="@+id/sportify_app"
+            android:text="@string/button_sportifyapp"
+            android:clickable="true"
+            android:onClick="onClickSportifyStreamer" />
+
+        <Button
+            style="@style/AppButton.FixedWidth"
+            android:id="@+id/score_app"
+            android:text="@string/button_scoreapp"
+            android:layout_below="@+id/sportify_app"
+            android:clickable="true"
+            android:onClick="onClickScoresApp" />
+
+        <Button
+            style="@style/AppButton.FixedWidth"
+            android:id="@+id/library_app"
+            android:text="@string/button_libraryapp"
+            android:layout_below="@+id/score_app"
+            android:clickable="true"
+            android:onClick="onClickLibraryApp" />
+
+        <Button
+            style="@style/AppButton.FixedWidth"
+            android:id="@+id/builditbigger_app"
+            android:text="@string/button_builditbigger"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/sportify_app"
+            android:layout_toEndOf="@+id/sportify_app"
+            android:clickable="true"
+            android:onClick="onClickBuildItBigger" />
+
+        <Button
+            style="@style/AppButton.FixedWidth"
+            android:id="@+id/xyzreader_app"
+            android:text="@string/button_xyzreader"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/builditbigger_app"
+            android:layout_toRightOf="@+id/score_app"
+            android:layout_toEndOf="@+id/score_app"
+            android:clickable="true"
+            android:onClick="onClickXYZReader" />
+
+        <Button
+            style="@style/AppButton.FixedWidth.Red"
+            android:id="@+id/onecommunity_app"
+            android:text="@string/button_capstone"
+            android:layout_below="@+id/xyzreader_app"
+            android:layout_toEndOf="@+id/library_app"
+            android:layout_toRightOf="@+id/library_app"
+            android:clickable="true"
+            android:onClick="onClickCapstone" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
